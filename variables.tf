@@ -13,3 +13,48 @@ variable "environment" {
   description = "environment"
   type        = string
 }
+
+#vpc variables 
+
+# for vpc cidr block 
+variable "vpc_cidr" {
+    description    = "vpc cidr block"
+    type           = string
+}
+
+#variable for the public subnet in AZ1
+variable "public_subnet_az1_cidr" {
+    description    = "public subnet az1 cidr block"
+    type           = string
+}
+
+variable "public_subnet_az2_cidr" {
+    description = "public subnet az2 cidr block"
+    type        = string
+}
+
+
+#variable for the private app subnet in AZ1
+variable "private_app_subnet_az1_cidr" {
+    description    = "private app subnet az1 cidr block"
+    type           = string
+}
+
+#variable for the private app subnet in AZ2
+variable "private_app_subnet_az2_cidr" {
+    description    = "private app subnet az2 cidr block"
+    type           = string
+}
+
+
+#variable for the private data subnet in AZ1
+variable "private_data_subnet_az1_cidr" {
+    description    = "private data subnet az1 cidr block"
+    type           = string
+}
+
+#variable for the private data subnet in AZ2
+variable "private_data_subnet_az2_cidr" {
+    description    = "private data subnet az2 cidr block"
+    type           = string
+}
