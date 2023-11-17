@@ -85,3 +85,14 @@ variable "database_instance_class" {
     description = "controls if instance is publicly accessible"
     type        = bool
 }
+
+# # acm variables
+# variable "domain_name" {
+#   description = "domain name"
+#   type        = string
+# }
+
+# variable "alternative_names" {
+#   description = "sub domain name"
+#   type        = string
+# }
