@@ -102,3 +102,15 @@ variable "ssl_certificate_arn" {
     description    = "ssl certificate arn"
     type           = string
 }
+
+
+# s3 variables 
+variable "env_file_bucket_name" {
+    description    = "s3 bucket name"
+    type           = string
+}
+
+variable "env_file_name" {
+    description    = "env file name"
+    type           = string
+}
