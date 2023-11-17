@@ -96,3 +96,9 @@ variable "database_instance_class" {
 #   description = "sub domain name"
 #   type        = string
 # }
+
+#application load balancer variable 
+variable "ssl_certificate_arn" {
+    description    = "ssl certificate arn"
+    type           = string
+}
