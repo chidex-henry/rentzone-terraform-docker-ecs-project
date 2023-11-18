@@ -61,30 +61,30 @@ variable "private_data_subnet_az2_cidr" {
 
 
 # rds variables
-variable "multi_az_deployment" {
-    description = "create a standby db instance"
-    type        = bool
-}
-
-variable "database_instance_identifier" {
-    description    = "the database instance identifier"
+variable "database_snapshot_identifier" {
+    description    = "the database snapshot arn"
     type           = string
-}
 
-variable "database_password" {
-    description    = "the database password"
-    type           = string
 }
 
 variable "database_instance_class" {
     description    = "the database instance type"
     type           = string
+
 }
 
- variable "publicly_accessible" {
-    description = "controls if instance is publicly accessible"
-    type        = bool
+variable "database_instance_identifier" {
+    description    = "the database instance identifier"
+    type           = string
+
 }
+
+variable "multi_az_deployment" {
+    description    = "create a stanby db instance"
+    type           = bool
+
+}
+
 
 # # acm variables
 # variable "domain_name" {
@@ -125,3 +125,4 @@ variable "container_image" {
     description    = "container image uri"
     type           = string
 }
+
