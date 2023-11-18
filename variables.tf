@@ -115,6 +115,7 @@ variable "env_file_name" {
     type           = string
 }
 
+
 #ecs variables 
 variable "architecture" {
     description    = "ecs cpu architecture"
@@ -125,4 +126,17 @@ variable "container_image" {
     description    = "container image uri"
     type           = string
 }
+
+
+# Route 53 variables 
+variable "domain_name" {
+    description    = "domain name"
+    type           = string
+}
+
+variable "record_name" {
+    description    = "sub domain name"
+    type           = string
+}
+
 
